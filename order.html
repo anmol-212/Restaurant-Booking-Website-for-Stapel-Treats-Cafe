@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Order</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="./assets/css/cart.css" media="screen" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.store.js"></script>
+</head>
+
+<body id="checkout-page">
+
+<div id="site">
+	<header id="masthead">
+		<h1></h1>
+	</header>
+	<div id="content">
+		<h1>Your Order</h1>
+		<table id="checkout-cart" class="shopping-cart">
+			<thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col">Price</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<div id="pricing">
+
+
+
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+		</div>
+
+		<div id="user-details">
+			<h2>Your Data</h2>
+			<div id="user-details-content"></div>
+		</div>
+
+
+
+
+		<form id="paypal-form" action="" method="post">
+			<input type="hidden" name="cmd" value="_cart" />
+			<input type="hidden" name="upload" value="1" />
+			<input type="hidden" name="business" value="" />
+
+			<input type="hidden" name="currency_code" value="" />
+			<!--<input type="submit" id="counter-btn" class="pay-btn" value="Pay with UPI" ;">
+		<input type="submit" id="counter-btn" class="pay-btn" value="Pay on Counter" onclick="window.location.href = 'confirm.html';"> -->
+		</form>
+		<!-- Popup HTML -->
+		<div id="overlay"></div>
+		<div id="popup">
+			<img src="https://cdn.discordapp.com/attachments/977603881116790900/1223744601198821519/image_2024-03-31_025323432.png?ex=661af7f9&is=660882f9&hm=9b8facd9e5085fb7060337d3fd29b3e6a1eff67413ca5f894e8dd1f1db8d54d7&" alt="Popup Image">
+		</div>
+
+		<!-- Button HTML -->
+		<input type="submit" id="counter-btn" class="pay-btn" value="Pay with UPI" onclick="showPopupAndRedirect();">
+		<input type="submit" id="counter-btn" class="pay-btn" value="Pay on Counter" onclick="window.location.href = 'confirm.html';">
+	</div>
+</div>
+<script>
+	function showPopupAndRedirect() {
+		// Show the overlay and popup
+		document.getElementById('overlay').style.display = 'block';
+		document.getElementById('popup').style.display = 'block';
+
+		// Redirect after 10 seconds
+		setTimeout(function () {
+			window.location.href = 'confirm.html';
+		}, 10000); // 10 seconds
+	}
+</script>
+</body>
+</html>	
+
+   

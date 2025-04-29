@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="./assets/css/cart.css" media="screen" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.store.js"></script>
+</head>
+
+<body id="checkout-page">
+
+<div id="site">
+	<header id="masthead">
+		<h1></h1>
+	</header>
+	<div id="content">
+		<h1>Checkout</h1>
+			<table id="checkout-cart" class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+		 <div id="pricing">
+			
+			<p id="shipping">
+				<strong>Shipping</strong>: <span id="sshipping"></span>
+			</p>
+			
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+		 </div>
+		 
+		 <form action="order.html" method="post" id="checkout-order-form">
+		 	<h2>Your Details</h2>
+		 	
+			<fieldset id="fieldset-billing">
+				<legend>Billing</legend>
+				<div>
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" data-type="string" data-message="This field cannot be empty" />
+				</div>
+				<div>
+					<label for="phone">Phone Number</label>
+					<input type="tel" name="phone" id="phone" data-type="string" data-message="This field cannot be empty" style="padding: 1px; width: 205px; box-sizing: border-box; border-radius: 5px; border: 1px solid #ccc; font-size: 14px; margin-bottom: 10px;" />
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="text" name="email" id="email" data-type="expression" data-message="Not a valid email address" />
+				</div>
+				<label for="state">State</label>
+				<select name="state" id="state" data-type="string" data-message="This field cannot be empty">
+					<option value="">Select</option>
+					<option value="Andhra Pradesh">Andhra Pradesh</option>
+					<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+					<option value="Assam">Assam</option>
+					<option value="Bihar">Bihar</option>
+					<option value="Chhattisgarh">Chhattisgarh</option>
+					<option value="Goa">Goa</option>
+					<option value="Gujarat">Gujarat</option>
+					<option value="Haryana">Haryana</option>
+					<option value="Himachal Pradesh">Himachal Pradesh</option>
+					<option value="Jharkhand">Jharkhand</option>
+					<option value="Karnataka">Karnataka</option>
+					<option value="Kerala">Kerala</option>
+					<option value="Madhya Pradesh">Madhya Pradesh</option>
+					<option value="Maharashtra">Maharashtra</option>
+					<option value="Manipur">Manipur</option>
+					<option value="Meghalaya">Meghalaya</option>
+					<option value="Mizoram">Mizoram</option>
+					<option value="Nagaland">Nagaland</option>
+					<option value="Odisha">Odisha</option>
+					<option value="Punjab">Punjab</option>
+					<option value="Rajasthan">Rajasthan</option>
+					<option value="Sikkim">Sikkim</option>
+					<option value="Tamil Nadu">Tamil Nadu</option>
+					<option value="Telangana">Telangana</option>
+					<option value="Tripura">Tripura</option>
+					<option value="Uttar Pradesh">Uttar Pradesh</option>
+					<option value="Uttarakhand">Uttarakhand</option>
+					<option value="West Bengal">West Bengal</option>
+					<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+					<option value="Chandigarh">Chandigarh</option>
+					<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+					<option value="Daman and Diu">Daman and Diu</option>
+					<option value="Lakshadweep">Lakshadweep</option>
+					<option value="Delhi">Delhi</option>
+					<option value="Puducherry">Puducherry</option>
+				</select>
+
+				<div>
+					<br />	<label for="city">City</label>
+					<input type="text" name="city" id="city" data-type="string" data-message="This field cannot be empty" />
+				</div>
+				<div>
+					<label for="address">Address</label>
+					<input type="text" name="address" id="address" data-type="string" data-message="This field cannot be empty" />
+				</div>
+				<div>
+					<label for="zip">Pin Code</label>
+					<input type="text" name="zip" id="zip" data-type="string" data-message="This field cannot be empty" />
+				</div>
+			</fieldset>	 	
+	 	
+		 	<p><input type="submit" id="submit-order" value="Submit" class="btn" /></p>
+		 
+		 </form>
+	</div>
+</div>
+
+</body>
+</html>	
+
+    
+

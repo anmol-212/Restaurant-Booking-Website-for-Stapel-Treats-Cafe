@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Staple Treats - North Indian, South Indian & Chinese Cuisine</title>
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/5289663089.js" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/foodmenu.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            background-image: url('./assets/images/menu_bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header-main">
+        <nav class="nav-main">
+            <h1 class="main-title"><a href="index.html">STAPLE TREATS</a></h1>
+            <div class="openMenu"><i class="fa-solid fa-bars" style="color: #ff9d2e;"></i></div>
+            <ul class="nav-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#cart.html"><i class="fas fa-shopping-cart cart-icon"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+    <!-- Navigation bar 2 -->
+    <div class="container" onclick="toggleMenu()">
+
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <!-- Menu -->
+    <div id="menu" class="menu">
+        <ul>
+            <li><a href="#starter">Starter</a></li>
+            <li><a href="#hungry">Hungry Helpers</a></li>
+            <li><a href="#paratha">Times of Paratha</a></li>
+            <li><a href="#combo">Combo Meals & Thali</a></li>
+            <li><a href="#drinks">Drinks</a></li>
+        </ul>
+    </div>
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <!-- Starter -->
+        <div class="menu-category">
+       <br /><br /><br />     <br /> <h2 id="starter" class="category-title">Starter</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <br />      <img src="./assets/images/dalpakori.jpg" alt="Dal Pakori">
+                    <h3>Dal Pakori</h3>
+                    <p>&#x20B9; 79</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br />      <img src="./assets/images/samosa.jpg" alt="Samosa">
+                    <h3>Samosa</h3>
+                    <p>&#x20B9; 25</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br />    <img src="./assets/images/breadroll.jpg" alt="Bread Roll">
+                    <h3>Bread Roll</h3>
+                    <p>&#x20B9; 20</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br />  <img src="./assets/images/PyazKachori.webp" alt="Pyaz Kachori">
+                    <h3>Pyaz Kachori</h3>
+                    <p>&#x20B9; 30</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hungry Helpers -->
+        <div class="menu-category">
+            <h2 id="hungry" class="category-title">Hungry Helpers</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <br />   <img src="./assets/images/chole_bhature.jpg" alt="Chole Bhature">
+                    <h3>Chole Bhature</h3>
+                    <p>&#x20B9; 99</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br />      <img src="./assets/images/pav_bhaji.jpg" alt="Pav Bhaji">
+                    <h3>Pav Bhaji</h3>
+                    <p>&#x20B9; 99</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br />    <img src="./assets/images/veg_burger.jpg" alt="Veg Burger">
+                    <h3>Veg Burger</h3>
+                    <p>&#x20B9; 69</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br />   <img src="./assets/images/paneer_sandwich.jpg" alt="Paneer Sandwich">
+                    <h3>Paneer Sandwich</h3>
+                    <p>&#x20B9; 100</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Times of Paratha -->
+        <div class="menu-category">
+            <h2 id="paratha" class="category-title">Times of Paratha</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <br />     <img src="./assets/images/aloo_paratha.jpg" alt="Aloo Paratha">
+                    <h3>Aloo Paratha</h3>
+                    <p>&#x20B9; 89</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/images/pyaz_paratha.jpg" alt="Pyaz Paratha">
+                    <br />      <h3>Pyaz Paratha</h3>
+                    <p>&#x20B9; 89</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br />    <img src="./assets/images/aloo_pyaz_paratha.jpg" alt="Aloo Pyaz Paratha">
+                    <h3>Aloo Pyaz Paratha</h3>
+                    <p>&#x20B9; 99</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br />      <img src="./assets/images/paneer_paratha.jpg" alt="Paneer Paratha">
+                    <h3>Paneer Paratha</h3>
+                    <p>&#x20B9; 129</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Combo Meals & Thali -->
+        <div class="menu-category">
+            <h2 id="combo" class="category-title">Combo Meals & Thali</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <br />         <img src="./assets/images/delux_thali.jpg" alt="Delux Thali">
+                    <h3>Delux Thali</h3>
+                    <p>&#x20B9; 130</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br />       <img src="./assets/images/rajma_rice.jpg" alt="Rajma Rice Combo">
+                    <h3>Rajma Rice</h3>
+                    <p>&#x20B9; 100</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br />   <img src="./assets/images/chole_rice_combo.jpg" alt="Chole Rice Combo">
+                    <h3>Chole Rice</h3>
+                    <p>&#x20B9; 100</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br />  <img src="./assets/images/kadhi_rice_combo.jpg" alt="Kadhi Rice Combo">
+                    <h3>Kadhi Rice</h3>
+                    <p>&#x20B9; 100</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-category">
+            <h2 id="drinks" class="category-title">Drinks</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <br /> <img src="./assets/images/cold_coffee.jpg" alt="Cold Coffee">
+                    <h3>Cold Coffee</h3>
+                    <p>&#x20B9; 80</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br /><img src="./assets/images/shikanji.jpg" alt="shikanji">
+                    <h3>Shikanji</h3>
+                    <p>&#x20B9; 80</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br /> <img src="./assets/images/lassi_salted.jpg" alt="Lassi Salted">
+                    <h3>Lassi Salted</h3>
+                    <p>&#x20B9; 80</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <br />  <img src="./assets/images/lassi_sweet.jpg" alt="Lassi Sweet">
+                    <h3>Lassi Sweet</h3>
+                    <p>&#x20B9; 80</p>
+                    <div>
+                        <button class="button" onclick="decrement(this)">-</button>
+                        <input type="text" id="quantityInput" value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <button class="button" onclick="increment(this)">+</button>
+                        <button class="order-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Function to toggle menu display
+function toggleMenu() {
+    var menu = document.getElementById('menu');
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+}
+
+// Function to hide menu when scrolling
+window.onscroll = function() {
+    var menu = document.getElementById('menu');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        menu.style.display = 'none';
+    }
+};
+
+// Increment function
+function increment(btn) {
+    var quantityInput = btn.parentNode.querySelector('#quantityInput');
+    var currentValue = parseInt(quantityInput.value) || 0; // If value is empty or non-numeric, default to 0
+    quantityInput.value = currentValue + 1;
+}
+
+// Decrement function
+function decrement(btn) {
+    var quantityInput = btn.parentNode.querySelector('#quantityInput');
+    var currentValue = parseInt(quantityInput.value) || 0; // If value is empty or non-numeric, default to 0
+    if (currentValue > 1) {
+        quantityInput.value = currentValue - 1;
+    }
+}
+ window.onscroll = function () {
+            var nav = document.querySelector('.nav-main');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                nav.classList.add('white-bg');
+            } else {
+                nav.classList.remove('white-bg');
+            }
+        };
+    </script>
+</body>
+</html>

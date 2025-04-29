@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Staple Treats - North Indian, South Indian & Chinese Cuisine</title>
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/5289663089.js" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/feedback.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            background-image: url('./assets/images/main_bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header-main">
+        <nav class="nav-main">
+            <h1 class="main-title"><a href="index.html">STAPLE TREATS</a></h1>
+            <ul class="nav-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+  <!--  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdALHqf-dvZn0mZV_6efnoFTyGbG8VPXjaxUHy22c6x5EZ-zw/viewform?embedded=true" width="640" height="1530" frameborder="0" marginheight="0" marginwidth="0" style="display: block; margin: 0 auto;">Loading…</iframe> -->
+     <div class="container">
+        <header class="header">
+            <h1 id="title">Feedback Form</h1>
+            <p id="description">Thank you for taking the time to help us improve!</p>
+        </header>
+        <form id="survey-form" action="http://localhost:3000/submit-feedback" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>How many of you are dining?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select group size</option>
+                    <option value="individual">Individual (one person)</option>
+                    <option value="couple">Couple</option>
+                    <option value="smallgroup">Small Group (3-4 people)</option>
+                    <option value="largegroup">Large Group (more than 4 people)</option>
+                    <option value="prefernot">Prefer Not to say</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend our restaurant to a friend?</p>
+                <label><input name="user_recommend" value="definitely" type="radio" class="input-radio" checked>Definitely</label>
+                <label><input name="user_recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+                <label><input name="user_recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite feature of our restaurant?</p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="food">Food</option>
+                    <option value="ambience">Ambience</option>
+                    <option value="service">Service</option>
+                    <option value="menu">Menu</option>
+                    <option value="prices">Prices & Offers</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improved?<span class="clue">(Check all that apply)</span></p>
+                <label><input name="prefer" value="Food" type="checkbox" class="input-checkbox">Food</label>
+                <label><input name="prefer" value="Ambience" type="checkbox" class="input-checkbox">Ambience</label>
+                <label><input name="prefer" value="Service Time" type="checkbox" class="input-checkbox">Service Time</label>
+                <label><input name="prefer" value="Service Staff Quality" type="checkbox" class="input-checkbox">Service Staff Quality</label>
+                <label><input name="prefer" value="Menu" type="checkbox" class="input-checkbox">Menu</label>
+                <label><input name="prefer" value="Prices & Offers" type="checkbox" class="input-checkbox">Prices & Offers</label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function toggleNavbar(x) {
+            x.classList.toggle("change");
+            var navbarCollapse = document.getElementById("navbarNav");
+            navbarCollapse.classList.toggle("show");
+        }
+</script>
+</body>
+</html>

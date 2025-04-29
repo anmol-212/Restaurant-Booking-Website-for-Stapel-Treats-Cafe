@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Staple Treats  | North Indian, South Indian & Chinese Cuisine
+    </title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <!-- external css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/popup.css">  
+    <!-- javascript file -->
+    <script src="./assets/js/script.js" defer></script>
+      <script src="./assets/js/popup.js" defer></script>
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/5289663089.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <section class="header-img">
+        <header class="header-main">
+            <nav class="nav-main">
+                <h1 class="main-title"><a href="index.html">STAPLE TREATS</a></h1>
+                <div class="openMenu"><i class="fa-solid fa-bars" style="color: #ff9d2e;"></i></div>
+                <ul class="nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><div class="closeMenu"><i class="fa-solid fa-xmark"></i></div></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="header-context">
+            <!--  <br /><br /> <br /><br /> <br /><br /> <br /><br /> <br /><br /> <br /><br /> <br /><br />
+       <h3 style="text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;"><span style="color: #33c933 ;">North Indian, </span><span style="color: #FF8C00">South Indian </span><span style="color: white;"> & </span><span style="color: #FF0000;">Chinese Cuisine</span></h3> -->
+        </div>
+    </section>
+
+    <!-- Promo Cards -->
+    <section id="promo-card">
+        <div class="promo-container">
+            <div class="promo-card">
+                <h3 class="h3-card-title">North Indian</h3>
+                <p class="card-text">
+                    Savor the authentic flavors of North Indian cuisine.
+                </p>
+                <img src="./assets/images/paratha.png" width="200" height="200" alt="Maxican Pizza" class="promo-img">
+            </div>
+
+            <div class="promo-card">
+                <h3 class="h3-card-title">Italian</h3>
+                <p class="card-text">
+                    Indulge in the exquisite flavors of Italian cuisine, a symphony for the taste buds.
+                </p>
+                <img src="./assets/images/pizza.png" width="200" height="200" alt="Burger Kingo" class="promo-img">
+            </div>
+
+            <div class="promo-card">
+                <h3 class="h3-card-title">Chinese</h3>
+                <p class="card-text">Indulge in the exquisite flavors of Chinese cuisine</p>
+                <img src="./assets/images/noodles1.png" width="200" height="200" alt="Burger Kingo" class="promo-img">
+            </div>
+            <div class="promo-card">
+                <h3 class="h3-card-title">South Indian</h3>
+                <p class="card-text">Experience the rich flavors of South Indian cuisine.</p>
+                <img src="./assets/images/idli_.png" width="200" height="200" alt="Soft Drinks" class="promo-img">
+            </div>
+
+            <div class="promo-card">
+                <h3 class="h3-card-title">Beverages</h3>
+                <p class="card-text">Quench your thirst with our delightful beverage selection.</p>
+                <img src="./assets/images/cold_coffee.png" width="200" height="200" alt="Beverages"
+                     class="promo-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section>
+        <div class="about-container">
+            <div class="about-banner">
+                <img src="./assets/images/store.jpg" alt="Burger with Drinks" class="about-img1">
+            </div>
+            <div class="about-content">
+                <h2 class="h2-about-title">
+                    🍴 Indulge in the Best Dining Experience at
+                    <span class="span"> Staple Treats</span>
+                </h2>
+
+                <p class="section-text">
+                    Join the Foodie Journey at Staple Treats – Secure Your Table for a Memorable
+                    Dining Experience! Whether it's a quick bite between classes, a casual hangout 
+                    with friends, or a study session fuel-up, we've got you covered with our hassle-free 
+                    reservation system. Plus, enjoy exclusive student discounts when you reserve your spot in advance. Reserve now!
+                </p>
+                <ul class="about-ul">
+                    <li>
+                        <i class="fa-solid fa-circle-check" style="color: #ff9d2e;"></i>
+                        <span class="about-text">Mouthwatering & Nutritious Meals</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check ticks" style="color: #ff9d2e;"></i>
+                        <span class="about-text">Dedicated Student and Group Spaces</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check ticks" style="color: #ff9d2e;"></i>
+                        <span class="about-text">Cozy Dining Ambiance</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check ticks" style="color: #ff9d2e;"></i>
+                        <span class="about-text">Dynamic Atmosphere & Campus Vibes</span>
+                    </li>
+                </ul>
+                
+            
+
+                <button type="button" class="btn-order-now" id="openForm">Reserve a table</button>
+
+                <!-- Pop up Section -->
+                
+                <div class="form-popup" id="myForm">
+                    <form class="form-container">
+                        <a href="" style="color: red;">Sign in</a>
+                        <div class="close-button" onclick="closeForm()">╳</div>
+                        <h2>Reservation at Staple Treats</h2>
+
+                        <select id="numberOfPeople" name="numberOfPeople">
+                            <option value="1">1 person</option>
+                            <option value="2" selected>2 people</option>
+                            <option value="3">3 people</option>
+                            <option value="4">4 people</option>
+                            <option value="5">5 people</option>
+                            <option value="6">6 people</option>
+                            <option value="7">7 people</option>
+                            <option value="8">8 people</option>
+                            <option value="9">9 people</option>
+                            <option value="10">10 people</option>
+                            <option value="11">11 people</option>
+                            <option value="12">12 people</option>
+                            <option value="13">13 people</option>
+                            <option value="14">14 people</option>
+                            <option value="15">15 people</option>
+                            <option value="16">16 people</option>
+                            <option value="17">17 people</option>
+                            <option value="18">18 people</option>
+                            <option value="19">19 people</option>
+                            <option value="20">20 people</option>
+                        </select>
+
+                        <input type="date" id="reservationDate" name="reservationDate">
+                        <select id="reservationTime" name="reservationTime">
+                            <option value="12:00 AM">12:00 AM</option>
+                            <option value="12:30 AM">12:30 AM</option>
+                            <option value="01:00 AM">01:00 AM</option>
+                            <option value="01:30 AM">01:30 AM</option>
+                            <option value="02:00 AM">02:00 AM</option>
+                            <option value="02:30 AM">02:30 AM</option>
+                            <option value="03:00 AM">03:00 AM</option>
+                            <option value="03:30 AM">03:30 AM</option>
+                            <option value="04:00 AM">04:00 AM</option>
+                            <option value="04:30 AM">04:30 AM</option>
+                            <option value="05:00 AM">05:00 AM</option>
+                            <option value="05:30 AM">05:30 AM</option>
+                            <option value="06:00 AM">06:00 AM</option>
+                            <option value="06:30 AM">06:30 AM</option>
+                            <option value="07:00 AM">07:00 AM</option>
+                            <option value="07:30 AM">07:30 AM</option>
+                            <option value="08:00 AM">08:00 AM</option>
+                            <option value="08:30 AM">08:30 AM</option>
+                            <option value="09:00 AM">09:00 AM</option>
+                            <option value="09:30 AM">09:30 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="10:30 AM">10:30 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="11:30 AM">11:30 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="12:30 PM">12:30 PM</option>
+                            <option value="01:00 PM">01:00 PM</option>
+                            <option value="01:30 PM">01:30 PM</option>
+                            <option value="02:00 PM">02:00 PM</option>
+                            <option value="02:30 PM">02:30 PM</option>
+                            <option value="03:00 PM">03:00 PM</option>
+                            <option value="03:30 PM">03:30 PM</option>
+                            <option value="04:00 PM">04:00 PM</option>
+                            <option value="04:30 PM">04:30 PM</option>
+                            <option value="05:00 PM">05:00 PM</option>
+                            <option value="05:30 PM">05:30 PM</option>
+                            <option value="06:00 PM">06:00 PM</option>
+                            <option value="06:30 PM">06:30 PM</option>
+                            <option value="07:00 PM" selected>07:00 PM</option>
+                            <option value="07:30 PM">07:30 PM</option>
+                            <option value="08:00 PM">08:00 PM</option>
+                            <option value="08:30 PM">08:30 PM</option>
+                            <option value="09:00 PM">09:00 PM</option>
+                            <option value="09:30 PM">09:30 PM</option>
+                            <option value="10:00 PM">10:00 PM</option>
+                            <option value="10:30 PM">10:30 PM</option>
+                            <option value="11:00 PM">11:00 PM</option>
+                            <option value="11:30 PM">11:30 PM</option>
+                        </select>
+                        <a href="#" class="red-button" onclick="showNestedForm(); showSelectedOptions();">Find a table</a>
+                        <br /><br />
+                        <i class="center block">
+                            <br />     Indulge in Culinary Delights with Staple Treats – Reserve Your Table Today!
+                        </i>
+                    </form>
+
+
+                    <!-- Nested form content -->
+                    <!-- Your Details (new form to be displayed) -->
+                    <form class="form-container nested-form">
+                        <div class="back-button" onclick="backForm()">&#x2190; </div> <br /><br />
+                        <a href="" style="color: red;">Sign in</a>
+                        <div class="close-button" onclick="closeForm()">╳</div>
+                        <h2>Reservation at Sauvage</h2>
+                        <b> <span style="color: red;">Your Details</span><br> </b>  <br />
+                        <div class="details-form-container">
+                            <div class="details-form">
+                                <input type="text" id="first-name" placeholder="First Name">
+                                <input type="text" id="last-name" placeholder="Last Name">
+                                <input type="tel" id="phone-number" placeholder="Phone Number">
+                                <input type="email" id="email" placeholder="Email">
+                                <select id="dropdown">
+                                    <option value="" disabled selected>Select an Occasion(Optional) </option>
+                                    <option value="none">None</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="date">Date</option>
+                                    <option value="special-occasion">Special Occasion</option>
+                                    <option value="business-meal">Business Meal</option>
+                                </select>
+                                <input type="text" id="special-request" placeholder="Special Request (Optional)">
+                            </div>
+                            <div class="details-text">
+                                <p class="people"></p> <br />
+                                <p class="date"></p> <br />
+                                <p class="time"></p> <br />
+                                <p>
+                                    📍Sushant University, Golf Course Rd, Huda, Sushant Lok 2, Sector 55, Gurugram, Haryana 122002
+                                </p>
+                                <br /> <hr /> <br />
+                                <b>What to know before you go</b> <br /> <br />
+                                <b>Important dining information</b> <br /> <br />
+                                <p>
+                                    We have a 15 minute grace period. Please
+                                    call us if you are running later than 15 minutes
+                                    after your reservation time.
+                                </p>
+                                <p>We may contact you about this reservation, so please ensure your email and phone number are up to date.</p>
+                            </div>
+                        </div>
+
+                        <br />
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="textUpdates">
+                            <label class="form-check-label" for="textUpdates">
+                                Yes, I want to get text updates and <br />
+                                reminders about my reservations.*
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="diningOffers">
+                            <label class="form-check-label" for="diningOffers">
+                                Sign me up to receive dining offers and <br />
+                                news from this restaurant by email.
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="openTableOffers">
+                            <label class="form-check-label" for="openTableOffers">
+                                Sign me up to receive dining offers and <br />
+                                news from OpenTable by email.
+                            </label>
+                        </div>
+
+                        <br />
+                        <a href="#" class="confirm" onclick="orderConfirmForm(); closeForm()">Confirm reservation</a>
+
+
+                        <br /><br /><br />
+                        <i class="center block">
+                            By selecting “Confirm reservation” you are agreeing to the terms and conditions of the
+                            <span style="color: red;">OpenTable User Agreement</span> and
+                            <span style="color: red;">Privacy Policy</span>. *Message & data rates may apply. You can
+                            opt out of receiving text messages at any time in your account setting or by replying STOP.
+                        </i>
+                        <br />
+                        <i class="">
+                            Certain consumers may have additional data rights, which can be exercised by clicking Do
+                            <span style="color:red;">Not Sell or Share My Personal Information.</span>
+                        </i>
+                    </form>
+
+</div>
+    </div>
+                <!--Pop up section ends here -->
+    </section>
+
+        <!-- Menu Items -->
+                <section id="menu" style="padding-top: 48px;">
+                    <div class="menu-header">
+                        <h4 class="subhead">Our Dishes</h4>
+                        <h1 class="Heading">Trendy <span style="color:  rgb(255, 196, 0);">Foods</span></h1>
+                    </div>
+
+                    <!-- All Dishes -->
+                    <div class="allitems">
+                        <div class="Items">
+                       <br />     <img class="dishpic" src="./assets/images/Veg_pizza.png" alt="veggie paradise pizza">
+                            <h3 class="Dish">Veggie Paradise Pizza</h3>
+                        </div>
+
+                        <div class="Items">
+                          <img class="dishpic" src="./assets/images/chole_bhature.png" alt="chole bhature">
+                            <h3 class="Dish">Chole Bhature</h3>
+                        </div>
+
+                        <div class="Items">
+                        <br /><img class="dishpic" src="./assets/images/thali.png" alt="Delux Thali">
+                        <h3 class="Dish">Delux Thali</h3>
+                        </div>
+
+
+                        <div class="Items">
+                              <img class="dishpic" src="./assets/images/samosa.png" alt="samosa">
+                              <h3 class="Dish">Samosa</h3>
+                        </div>
+
+                        <div class="Items">
+                               <img class="dishpic" src="./assets/images/idli1.png" alt="Idli Sambar">
+                               <h3 class="Dish">Idli Sambar</h3>
+                        </div>
+
+                        <div class="Items">
+                            <img class="dishpic" src="./assets/images/sandwich.png" alt="paneer sandwich">
+                            <br /><br />   <h3 class="Dish">Paneer Sandwich</h3>
+                        </div>
+
+                        <div class="Items">
+                            <img class="dishpic" src="./assets/images/Pav-Bhaji500.png" alt="">
+                            <h3 class="Dish">Pav Bhaji</h3>
+                        </div>
+
+                        <div class="Items">
+                            <img class="dishpic" src="./assets/images/noodles.png" alt="">
+                            <h3 class="Dish">Veg Noodles</h3>
+                        </div>
+
+                        <div class="Items">
+                            <img class="dishpic" src="./assets/images/king_size_maggie.png" alt="cheese maggi">
+                            <h3 class="Dish">Cheese Maggi</h3>
+                        </div>
+
+                        <div class="Items">
+                      <img class="dishpic" src="./assets/images/pasta.png" alt="white sauce pasata">
+                            <h3 class="Dish">White Sauce Pasta</h3>
+                        </div>
+
+                        <div class="Items">
+                         <br /><br />   <img class="dishpic" src="./assets/images/rajma_rice.png" alt="rajma rice">
+                            <br /><h3 class="Dish">Rajma Rice</h3>
+                        </div>
+
+                        <div class="Items">
+                            <img class="dishpic" src="./assets/images/burger.png" alt="burger">
+                            <h3 class="Dish">Veg Burger</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Customer Review -->
+                <section>
+                    <div class="testimonials">
+                        <div class="inner">
+                            <h1>Our Customer Reviews</h1>
+                            <div class="inner-border"></div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="testimonial">
+                                        <img src="./assets/images/yash.jpg" alt="Jeff_Bezos">
+                                        <div class="name">
+                                            Yash Dubal
+                                        </div>
+                                        <hr>
+                                        <div class="star">
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Staple Treats is undeniably the highlight of our campus experience! 
+                                            With its mouthwatering menu, attentive staff, and inviting atmosphere,
+                                            it's the ultimate destination for a satisfying meal or a relaxing hangout with friends.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="testimonial">
+                                        <img src="./assets/images/nikhil.jpg" alt="Steve_Ballmer">
+                                        <div class="name">
+                                           Nikhil Saini
+                                        </div>
+                                        <hr>
+                                        <div class="star">
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <p>
+                                            At Staple Treats, every visit feels like a culinary adventure right 
+                                            on campus! From their diverse menu options to their warm and welcoming
+                                            ambiance, it's the perfect spot to unwind and enjoy delicious food at student-friendly prices.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="testimonial">
+                                        <img src="./assets/images/piyaasha.jpg" alt="google_ceo">
+                                        <div class="name">
+                                            Piyaasha Sharma
+                                        </div>
+                                        <hr>
+                                        <div class="star">
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Staple Treats has truly elevated the dining scene on our campus! With its delectable 
+                                            dishes, attentive service, and cozy environment, it's become the go-to spot for students seeking a delightful dining experience without leaving campus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    <div class="testimonials">
+        <div class="inner">
+            <h1>Where to Find Us</h1>
+            <div class="inner-border"></div> <br />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.61671594453!2d77.10987577450167!3d28.430819993213916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1fe316af45c3%3A0x395258878d231f54!2sStaple%20Treats!5e0!3m2!1sen!2sin!4v1709289506622!5m2!1sen!2sin" width="100%" height="500" style="border: 4px solid #ccc; border-radius: 10px; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        <br /><br />
+            <p>Sushant University, Golf Course Rd, Huda, Sushant Lok 2, Sector 55, Gurugram, Haryana 122002</p> <br />
+            <p>Contact Us on +91 9971222602 | Email: info@StapleTreats.com</p>
+        </div>
+        </div>
+            <!-- Footer -->
+    <footer>
+
+        <br />
+        <p style="text-align: right; color: white; padding-right: 10px;">Delivery Partner</p>
+
+        <!-- Define the image with an image map -->
+        <img src="./assets/images/zomato.webp" style="width: 110px; height: auto; float: right; margin-right: 10px;" usemap="#restaurantMap" />
+
+        <!-- Define the image map -->
+        <map name="restaurantMap">
+            <!-- Define the clickable area for Swiggy link -->
+            <area shape="rect" coords="0,0,55,110" alt="Swiggy Link" href="https://www.swiggy.com/restaurants/staple-treats-inside-shushant-university-sec-55-golf-course-road-gurgaon-717060" target="_blank" />
+
+            <!-- Define the clickable area for Zomato link -->
+            <area shape="rect" coords="55,0,110,110" alt="Zomato Link" href="https://www.zomato.com/ncr/staple-treats-golf-course-road-gurgaon" target="_blank" />
+        </map>
+
+
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4 class="footer-title">company</h4>
+                <ul>
+                    <li><a href="about.html">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">trademark</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="https://www.google.com/maps?ll=28.430815,77.112451&z=16&t=m&hl=en&gl=IN&mapclient=embed&cid=4130461147463884628">Directions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">follow us</h4>
+                <div class="social-links">
+                    <a href="#" title="FaceBook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <h3>Copyright ©️ 2024 | Staple Treats | All rights reserved.</h3>
+        </div>
+    </footer>
+    <script>
+        function orderConfirmForm() {
+            // Retrieve values from form fields
+            var firstName = document.getElementById("first-name").value;
+            var lastName = document.getElementById("last-name").value;
+            var phoneNumber = document.getElementById("phone-number").value;
+            var email = document.getElementById("email").value;
+
+            // Display alert message with reservation details
+            alert(firstName + " " + lastName + ", your reservation has been confirmed. Reservation details have been sent to " + phoneNumber + " and " + email + " or contact us on 9971222602");
+
+        }
+    </script>
+</body>
+</html>
