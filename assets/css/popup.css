@@ -1,0 +1,351 @@
+﻿.center {
+    text-align: center;
+}
+
+
+
+.block {
+    display: block;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: #fefefe;
+    width: 80%;
+    /* Adjust the width as needed */
+    max-width: 700px;
+    /* Set a maximum width if necessary */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+    max-width: 100%;
+    /* Adjust the width as needed */
+    padding: 20px;
+    margin: auto;
+    /* Center the container horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+    .form-container h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-container select,
+    .form-container input,
+    .form-container .red-button,
+    .form-container .close-button {
+        flex: 1;
+        padding: 12px;
+        /* Adjust the padding as needed */
+        margin: 5px;
+        border: none;
+        background: #f1f1f1;
+        border-radius: 10px;
+        font-size: 16px;
+        /* Adjust the font size as needed */
+    }
+
+
+
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-container select:focus,
+.form-container input:focus,
+.form-container .red-button:focus,
+.form-container .close-button:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container select,
+.form-container input.form-control {
+    width: 50%;
+    /* Set the width to 50% */
+}
+
+.form-container .red-button {
+    width: 100%;
+    /* Set the width to 100% */
+    color: #fff;
+    /* Text color (white) */
+    background-color: #cc3535;
+    /* Light red background color */
+    border: 2px solid #FFC0CB;
+    /* Border color */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.back-button {
+    flex: none;
+    /* Prevent the button from stretching */
+    margin-right: auto;
+    /* Move the button to the left */
+    width: 42px;
+    height: 42px;
+    background-color: #fff;
+    /* White color */
+    border: 1px solid #000;
+    /* Black border */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+    color: #000;
+    /* Black color */
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.form-container {
+    overflow-y: auto;
+    /* Add overflow property */
+    max-height: 80vh;
+    /* Set a maximum height for the scroll bar */
+}
+
+    .form-container .close-button {
+        width: 45px;
+        height: 45px;
+        background-color: #fff;
+        /* White color */
+        border: 1px solid #000;
+        /* Black border */
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 18px;
+        color: #000;
+        /* Black color */
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+
+
+.cancel {
+    background-color: #f44336;
+}
+
+    .cancel:hover,
+    .cancel:focus {
+        background-color: #da190b;
+    }
+
+.nested-form {
+    display: none;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+    /* Added margin-top for better spacing */
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .form-check input[type="checkbox"] {
+        margin-right: 10px;
+        /* Adjust margin as needed */
+        flex: none;
+        /* Prevent the checkbox from stretching */
+    }
+
+    .form-check label {
+        margin: 0;
+        /* Reset margin */
+    }
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    button[type="submit"]:hover {
+        background-color: #3e8e41;
+    }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.form-control {
+    /* Added CSS rule for form-control class */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.reservation-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+    .reservation-info p {
+        margin: 0;
+    }
+
+.important-info {
+    flex: 1;
+    /* Take remaining space */
+    display: flex;
+    /* Use flexbox */
+    justify-content: flex-end;
+    /* Align content to the end (right) */
+}
+
+    .important-info p {
+        margin-left: auto;
+        /* Push the text to the right */
+        text-align: right;
+        /* Align the text to the right */
+    }
+
+.confirm {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    background-color: #cc3535;
+    border: 2px solid #FFC0CB;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 12px;
+    margin: 5px;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.details-form-container {
+    display: flex;
+    justify-content: space-between; /* Aligns items with space in between */
+}
+
+.details-form {
+    width: 30%; /* Adjust width as needed */
+    padding-right: 20px; /* Add space between input and text */
+}
+
+    .details-form input, .details-form select {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+.details-text {
+    width: 60%; /* Adjust width as needed */
+}
+/* Add CSS for the second form input boxes and dropdown menu */
+.nested-form .details-form input[type="text"],
+.nested-form .details-form input[type="tel"],
+.nested-form .details-form input[type="email"],
+.nested-form .details-form textarea,
+.nested-form .details-form select {
+    width: calc(132% - 10px); /* Set width and subtract padding */
+    padding: 10px; /* Padding for input elements */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Customize the width and height of the dropdown menu */
+.nested-form .details-form select {
+    width: 129%; /* Set the width to 100% */
+    height: 40px; /* Customize the height */
+}
+
+/* Customize the width and height of the input boxes */
+.nested-form .details-form input[type="text"],
+.nested-form .details-form input[type="tel"],
+.nested-form .details-form input[type="email"],
+.nested-form .details-form textarea {
+    height: 40px; /* Customize the height */
+}
+
+/* Add styling for the confirmation button */
+.confirm {
+    width: calc(100% - 10px); /* Set width and subtract padding */
+    padding: 12px; /* Padding for the button */
+    margin: 5px;
+}

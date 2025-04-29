@@ -1,0 +1,152 @@
+﻿/* Nav Bar CSS */
+.nav-main {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+    color: white;
+    border: transparent;
+    border-block-end: 1px solid hsla(23, 61%, 86%, 0.2);
+    transition: 0.6s;
+    background-color: rgba(0, 0, 0, 0.5); /* Set background color with opacity */
+}
+
+.main-title a {
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+    white-space: nowrap;
+    color: #FF9d2E;
+    cursor: pointer;
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.nav-ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.nav-ul li a {
+    font-family: Roboto, sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-ul li a:hover {
+    color: #FF9D2E;
+    cursor: pointer;
+}
+
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F9F6F0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FF9D2E;
+    border-radius: 4rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent white color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#description {
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.form-group p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.input-radio {
+    margin-right: 10px;
+}
+
+.input-checkbox {
+    margin-right: 5px;
+}
+
+.input-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 80px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Ensures the button is displayed as a block element */
+    margin-left: auto; /* Align left margin to auto */
+    margin-right: auto; /* Align right margin to auto */
+}
+
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
